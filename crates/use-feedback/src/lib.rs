@@ -59,7 +59,7 @@ pub fn positive_feedback(input: f64, feedback: f64, gain: f64) -> Result<f64, Fe
 #[cfg(test)]
 mod tests {
     use super::{
-        negative_feedback, positive_feedback, FeedbackDirection, FeedbackError, FeedbackLoop,
+        FeedbackDirection, FeedbackError, FeedbackLoop, negative_feedback, positive_feedback,
     };
 
     #[test]

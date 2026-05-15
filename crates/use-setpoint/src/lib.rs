@@ -60,7 +60,7 @@ pub fn within_tolerance(target: f64, measured: f64, tolerance: f64) -> Result<bo
 
 #[cfg(test)]
 mod tests {
-    use super::{within_tolerance, Setpoint, SetpointError};
+    use super::{Setpoint, SetpointError, within_tolerance};
 
     #[test]
     fn checks_tolerance_and_error() {
