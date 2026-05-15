@@ -1,0 +1,17 @@
+[package]
+name = "use-control-signal"
+description = "Control signal validation and saturation helpers"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-control-signal"
+keywords = ["control", "signal", "clamp", "saturation"]
+categories = ["algorithms", "science"]
+
+[lints]
+workspace = true

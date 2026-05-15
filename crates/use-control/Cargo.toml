@@ -1,0 +1,26 @@
+[package]
+name = "use-control"
+description = "Composable facade crate for RustUse control-system primitives"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-control"
+keywords = ["control", "pid", "feedback", "stability", "signal"]
+categories = ["algorithms", "science"]
+
+[dependencies]
+use-control-error.workspace = true
+use-control-signal.workspace = true
+use-feedback.workspace = true
+use-pid.workspace = true
+use-setpoint.workspace = true
+use-stability.workspace = true
+use-system-response.workspace = true
+
+[lints]
+workspace = true

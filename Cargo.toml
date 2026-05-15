@@ -1,0 +1,49 @@
+[workspace]
+members = [
+    "crates/use-control",
+    "crates/use-feedback",
+    "crates/use-pid",
+    "crates/use-setpoint",
+    "crates/use-control-error",
+    "crates/use-control-signal",
+    "crates/use-system-response",
+    "crates/use-stability",
+]
+resolver = "2"
+
+[workspace.package]
+authors = ["RustUse Contributors"]
+edition = "2024"
+homepage = "https://rustuse.org"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/RustUse/use-control"
+rust-version = "1.95.0"
+version = "0.0.1"
+
+[workspace.dependencies]
+use-control = { version = "0.0.1", path = "crates/use-control" }
+use-control-error = { version = "0.0.1", path = "crates/use-control-error" }
+use-control-signal = { version = "0.0.1", path = "crates/use-control-signal" }
+use-feedback = { version = "0.0.1", path = "crates/use-feedback" }
+use-pid = { version = "0.0.1", path = "crates/use-pid" }
+use-setpoint = { version = "0.0.1", path = "crates/use-setpoint" }
+use-stability = { version = "0.0.1", path = "crates/use-stability" }
+use-system-response = { version = "0.0.1", path = "crates/use-system-response" }
+
+[workspace.metadata.rustuse.release]
+publish = false
+versioning = "lockstep-0.x"
+first-publish-candidates = [
+    "use-feedback",
+    "use-pid",
+    "use-setpoint",
+    "use-control-error",
+    "use-control-signal",
+    "use-system-response",
+    "use-stability",
+    "use-control",
+]
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
