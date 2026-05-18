@@ -1,6 +1,6 @@
 name: Release Publish Automation
 
-on:
+"on":
     push:
         branches:
             - main
@@ -27,8 +27,7 @@ jobs:
         runs-on: ubuntu-latest
         env:
             PUBLISHED_CRATES: >-
-                use-feedback use-pid use-setpoint use-control-error
-                use-control-signal use-system-response use-stability use-control
+              use-feedback use-pid use-setpoint use-control-error use-control-signal use-system-response use-stability use-control
         steps:
             - name: Check out repository
               uses: actions/checkout@v4
